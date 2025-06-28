@@ -1,38 +1,84 @@
-body {
-    font-family: sans-serif;
-    background: #f2f2f2;
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
+  }
+
+  .container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 320px;
+  }
+
+  h2 {
     text-align: center;
-  }
-  header {
-    background: #333;
-    color: white;
-    padding: 2rem 0;
-  }
-  section {
-    padding: 2rem;
-  }
-  .skills span {
-    display: inline-block;
-    background: #444;
-    color: white;
-    margin: 5px;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  .projects a {
-    display: block;
-    margin: 10px auto;
-    width: fit-content;
     color: #333;
-    text-decoration: none;
-    background: #ddd;
-    padding: 10px;
-    border-radius: 5px;
+    margin-bottom: 20px;
   }
-  footer {
-    background: #333;
+
+  #taskInput {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    margin-right: 8px;
+    font-size: 14px;
+  }
+
+  #addBtn {
+    padding: 10px 16px;
+    background-color: #3498db;
     color: white;
-    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  #addBtn:hover {
+    background-color: #2980b9;
+  }
+
+  ul#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  ul#taskList li {
+    background-color: #f0f4f8;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s;
+  }
+
+  ul#taskList li:hover {
+    transform: scale(1.02);
+  }
+
+  ul#taskList button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s;
+  }
+
+  ul#taskList button:hover {
+    background-color: #c0392b;
   }
