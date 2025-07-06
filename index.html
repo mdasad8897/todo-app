@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do app</title>
+    <title>Mini-Project 1: calculator</title>
  <link rel="stylesheet"  href="style.css"/>
 </head>
 <body>
   
-<div class="container">
-  <h2>To-Do List</h2>
-  <input type="text" id="taskInput" placeholder="Enter task">
-  <button id="addBtn">Add Task</button>
-  <ul id="taskList"></ul>
-</div>
+  <div class="calculator">
+    <h2>Basic Calculator</h2>
+    <input type="number" id="num1" placeholder="First number">
+    <input type="number" id="num2" placeholder="Second number">
+    <br />
+    <button id="addbtn">+</button>
+    <button id="subbtn">-</button>
+    <button id="mulbtn">×</button>
+    <button id="divebtn">÷</button>
 
+    <div id="result">Result: </div>
+
+    <h3>History</h3>
+    <ul id="history"></ul>
+    <button id="historydltbtn">Clear History</button>
+  </div>
+  
     <script src="script.js"></script>
 </body>
 </html> 

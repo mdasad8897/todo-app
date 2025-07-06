@@ -1,84 +1,83 @@
 
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f6fa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-  }
+    body {
+      background: #f4f6f8;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 40px;
+    }
 
-  .container {
-    background: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    width: 320px;
-  }
+    .calculator {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      width: 320px;
+      text-align: center;
+    }
 
-  h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-  }
+    input[type="number"] {
+      width: 130px;
+      padding: 10px;
+      margin: 10px 5px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
 
-  #taskInput {
-    width: calc(100% - 100px);
-    padding: 10px;
-    border: 2px solid #ddd;
-    border-radius: 6px;
-    margin-right: 8px;
-    font-size: 14px;
-  }
+    input[type="number"]:focus {
+      border-color: #007bff;
+    }
 
-  #addBtn {
-    padding: 10px 16px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
+    button {
+      padding: 12px 18px;
+      margin: 5px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background: #007bff;
+      color: white;
+      cursor: pointer;
+    }
 
-  #addBtn:hover {
-    background-color: #2980b9;
-  }
+    button:hover {
+      background: #0056b3;
+    }
 
-  ul#taskList {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-  }
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
 
-  ul#taskList li {
-    background-color: #f0f4f8;
-    margin-bottom: 10px;
-    padding: 12px;
-    border-radius: 6px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: transform 0.2s;
-  }
+    #history {
+      margin-top: 20px;
+      text-align: left;
+      padding-left: 0;
+      list-style-type: decimal;
+      max-height: 200px;
+      overflow-y: auto;
+    }
 
-  ul#taskList li:hover {
-    transform: scale(1.02);
-  }
+    #history li {
+      background: #f9f9f9;
+      margin: 5px 0;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 16px;
+    }
 
-  ul#taskList button {
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 6px 10px;
-    cursor: pointer;
-    font-size: 12px;
-    transition: background-color 0.3s;
-  }
+    #historydltbtn {
+      background: #dc3545;
+      margin-top: 10px;
+    }
 
-  ul#taskList button:hover {
-    background-color: #c0392b;
-  }
+    #historydltbtn:hover {
+      background: #a71d2a;
+    }
+  
